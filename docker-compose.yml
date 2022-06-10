@@ -21,6 +21,9 @@ services:
     volumes:
       - ./appdata/pyddns:/usr/src/app
       - ./appdata/static/node_modules:/usr/src/app/static/node_modules
+      - ./appdata/static/common:/usr/src/app/static/common
+      - ./appdata/static/admin:/usr/src/app/static/admin
+      - ./appdata/static/pyaddns:/usr/src/app/static/pyaddns
     environment:
       DNS_HOST: ddns
       DNS_API_PORT: 8080
